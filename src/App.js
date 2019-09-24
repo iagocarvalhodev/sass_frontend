@@ -5,9 +5,14 @@ import store from './store';
 import Routes from './routes';
 // import { Container } from './styles';
 
+import GlobalStyle from './styles/global';
+
 const App = () => (
   <Provider store={store}>
-    <Routes />
+    <>
+      <Routes />
+      <GlobalStyle />
+    </>
   </Provider>
 );
 
